@@ -8,7 +8,7 @@ on:
 
 env:
   # Core build target settings
-  IMMORTALWRT_VERSION: "25.12.0"
+  IMMORTALWRT_VERSION: "25.12.2"
   TARGET: "x86"
   SUBTARGET: "64"
   PROFILE: "generic"
@@ -19,7 +19,7 @@ env:
   IMAGEBUILDER_FALLBACK_BASE_URLS: "https://mirrors.sjtug.sjtu.edu.cn/immortalwrt https://mirrors.nju.edu.cn/immortalwrt https://mirrors.ustc.edu.cn/immortalwrt"
 
   # Base packages from default feeds. Add more packages here when needed.
-  BASE_PACKAGES: "luci luci-mod-rpc luci-theme-argon luci-app-argon-config luci-i18n-argon-config-zh-cn luci-i18n-base-zh-cn luci-app-wechatpush luci-i18n-wechatpush-zh-cn"
+  BASE_PACKAGES: "luci luci-mod-rpc luci-theme-argon luci-app-argon-config luci-i18n-argon-config-zh-cn luci-i18n-base-zh-cn luci-app-wechatpush luci-i18n-wechatpush-zh-cn luci-compat luci-lib-ipkg keepalived qemu-ga"
 
   # Extra packages. mihomo-meta/nikki/luci-app-nikki and its i18n package are
   # third-party feed packages,

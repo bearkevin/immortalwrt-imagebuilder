@@ -31,7 +31,7 @@
 在文件 `.github/workflows/build-immortalwrt-imagebuilder.yml` 的 `env` 中修改：
 
 - `IMMORTALWRT_VERSION`
-  - ImmortalWRT release 版本，当前指定为 `25.12.0`。
+  - ImmortalWRT release 版本，当前指定为 `25.12.2`。
 - `TARGET` / `SUBTARGET` / `PROFILE`
   - 当前默认分别是 `x86` / `64` / `generic`。
 - `IMAGEBUILDER_URL`
@@ -73,7 +73,7 @@
 - `sha256sums`
 
 ## 后续如何追加软件包
-- 常规包：直接追加到 `BASE_PACKAGES` 或 `EXTRA_PACKAGES`。当前 `BASE_PACKAGES` 已包含 LuCI、RPC、Argon 主题/配置、基础中文翻译、wechatpush 与 wechatpush 中文翻译。
+- 常规包：直接追加到 `BASE_PACKAGES` 或 `EXTRA_PACKAGES`。当前 `BASE_PACKAGES` 已包含 LuCI、RPC、Argon 主题/配置、基础中文翻译、wechatpush 与 wechatpush 中文翻译，以及 `luci-compat`、`luci-lib-ipkg`、`keepalived`（代理 VIP 高可用）和 `qemu-ga`（PVE guest agent）。
 - Nikki feed 包：当前 `EXTRA_PACKAGES` 已包含 `mihomo-meta`、`nikki`、`luci-app-nikki` 与 `luci-i18n-nikki-zh-cn`。
 - 建议把“官方常规包”和“第三方 feed 包”分开维护，方便排错。
 
